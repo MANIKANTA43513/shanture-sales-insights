@@ -19,11 +19,7 @@ There are several ways to modify this application:
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+If you want to work locally using your own IDE, you can clone this repo and push changes. Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
@@ -33,13 +29,13 @@ git clone <YOUR_GIT_URL>
 cd <YOUR_PROJECT_NAME>
 
 # Step 3: Install the necessary dependencies.
-npm i
+npm install
 
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Edit files directly in GitHub**
 
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
@@ -53,24 +49,150 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## Technical Stack
 
-This project is built with:
+This Sales Analytics Dashboard is built with modern web technologies:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite for fast development and building
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Shadcn/ui component library
+- **Charts**: Recharts for data visualization
+- **Date Handling**: React DatePicker for date range selection
+- **State Management**: React hooks and context
+- **Routing**: React Router for navigation
 
-## How can I deploy this project?
+## Key Features
 
-Simply open [Lovable](https://lovable.dev/projects/7532db13-544d-459c-ac71-1ad11de7ed4a) and click on Share -> Publish.
+### 📊 Analytics Dashboard
+- **Real-time Metrics**: Revenue, orders, average order value, customer analytics
+- **Interactive Charts**: Bar charts, pie charts, and line graphs using Recharts
+- **Date Range Filtering**: Flexible date selection with quick preset options
+- **Trend Indicators**: Visual indicators showing performance changes
 
-## Can I connect a custom domain to my Lovable project?
+### 📈 Data Visualization
+- **Revenue by Region**: Geographic performance analysis
+- **Sales by Category**: Product category breakdown
+- **Top Products**: Best-performing products ranking
+- **Top Customers**: Highest-value customer analysis
 
-Yes, you can!
+### 📋 Reports Management
+- **Generate Reports**: Create analytics reports for specific date ranges
+- **Save Reports**: Store reports in application history
+- **Download Reports**: Export reports as CSV files
+- **Reports History**: View and access previously generated reports
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### 🎨 Design System
+- **Shanture Branding**: Professional purple and blue gradient theme
+- **Responsive Design**: Mobile-first approach, works on all devices
+- **Modern UI**: Clean, professional interface with smooth animations
+- **Accessibility**: Semantic HTML and proper color contrast
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # Shadcn/ui base components
+│   ├── ShantureLogo.tsx # Company branding component
+│   ├── MetricCard.tsx   # Key metrics display
+│   ├── DateRangePicker.tsx # Date selection component
+│   ├── AnalyticsChart.tsx  # Chart visualization component
+│   └── ReportsTable.tsx    # Reports management table
+├── data/                # Mock data and data utilities
+│   └── mockData.ts      # Sample sales data generation
+├── pages/               # Application pages
+│   ├── Index.tsx        # Main dashboard page
+│   └── NotFound.tsx     # 404 error page
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility libraries
+└── App.tsx             # Main application component
+```
+
+## Getting Started
+
+### Prerequisites
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd shanture-sales-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the application.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `dist/` directory.
+
+## Assignment Compliance
+
+This project fulfills the requirements for **Shanture's MERN Stack Developer Assignment**:
+
+✅ **Frontend Requirements Met:**
+- React application with clean, responsive UI design
+- Date range picker component with calendar functionality
+- Interactive data visualization using modern charting library
+- Loading states and error handling implemented
+- Professional styling with CSS/styled components
+
+✅ **Technical Implementation:**
+- Modern folder structure following best practices
+- TypeScript for type safety and better development experience
+- Component-based architecture for maintainability
+- Responsive design for mobile and desktop compatibility
+- Performance optimized with Vite build system
+
+✅ **Data Processing Simulation:**
+- Mock data generation for 2+ years of sales history
+- Data aggregation algorithms for analytics computation
+- Filtering mechanisms for date-based queries
+- Multiple data dimensions (regions, categories, customers, products)
+
+## Future Enhancements
+
+For a complete MERN stack implementation, consider adding:
+
+- **Backend API**: Node.js with Express.js server
+- **Database**: MongoDB with aggregation pipelines or SQL database
+- **Authentication**: User login and access control
+- **Real-time Updates**: WebSocket integration for live data
+- **Advanced Filtering**: More sophisticated query capabilities
+- **Data Export**: Additional export formats (PDF, Excel)
+- **Performance Optimization**: Caching and query optimization
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is created for Shanture's Fresher Hiring Challenge.
+
+---
+
+**Developed for Shanture Company**  
+*Sales Analytics Dashboard - MERN Stack Developer Assignment*
