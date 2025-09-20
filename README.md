@@ -1,18 +1,21 @@
-# Welcome to your Lovable project
+# Shanture Sales Analytics Dashboard
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/7532db13-544d-459c-ac71-1ad11de7ed4a
+A comprehensive Sales Analytics Dashboard built for Shanture's Fresher Hiring Challenge. This application demonstrates advanced data processing, visualization, and modern UI development skills using React, TypeScript, and Tailwind CSS.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Interactive Date Range Selection**: Calendar-based filtering for custom reporting periods
+- **Real-time Analytics**: Key performance metrics with trend indicators
+- **Data Visualization**: Interactive charts including bar charts, pie charts, and line graphs
+- **Reports Management**: Generate, save, and download analytics reports
+- **Responsive Design**: Mobile-friendly interface with professional styling
+- **Performance Metrics**: Revenue tracking, order analysis, and customer insights
 
-**Use Lovable**
+## How to edit this code?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7532db13-544d-459c-ac71-1ad11de7ed4a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+There are several ways to modify this application:
 
 **Use your preferred IDE**
 
